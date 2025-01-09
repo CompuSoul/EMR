@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Screening</title>
+    <link rel="stylesheet" href="screening.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+</head>
+<body><!-- Menu Bar -->
+    <div class="menu-bar">
+        <div class="menu-logo">
+            <h1>Zoom EMR</h1>
+        </div>
+        <nav class="menu-links">
+            <a href="Menu.html">Home</a>
+            <a href="Intake.html">Intake Form</a>
+            <a href="Client Note.html">Notes</a>
+            
+            <a href="pcp1.html">PCP</a>
+            <a href="Lookup.html">Lookup</a>
+
+
+        </nav>
+        <div class="menu-ribbon">
+            
+            <button onclick="saveData()">Save</button>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Mental Health Screening</h1>
+            <p>Please complete this screening to help assess mental health concerns.</p>
+        </header>
+
+        <form action="#" method="post" id="mental-health-screening-form">
+            <!-- Client Information Section -->
+            <section class="client-info">
+                <h2>Client Information</h2>
+                <div class="form-group">
+                    <label for="client-name">Client Name:</label>
+                    <input type="text" id="client-name" name="client-name" placeholder="Enter client name" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+            </section>
+
+            <!-- Screening Questions -->
+            <section class="screening-questions">
+                <h2>Screening Questions</h2>
+
+                <!-- Mood and Depression -->
+                <div class="form-group">
+                    <label for="mood">1. Over the last two weeks, how often have you felt down, depressed, or hopeless?</label>
+                    <select id="mood" name="mood" required>
+                        <option value="">Select an option</option>
+                        <option value="Not at all">Not at all</option>
+                        <option value="Several days">Several days</option>
+                        <option value="More than half the days">More than half the days</option>
+                        <option value="Nearly every day">Nearly every day</option>
+                    </select>
+                </div>
+
+                <!-- Anxiety -->
+                <div class="form-group">
+                    <label for="anxiety">2. Over the last two weeks, how often have you felt anxious, nervous, or on edge?</label>
+                    <select id="anxiety" name="anxiety" required>
+                        <option value="">Select an option</option>
+                        <option value="Not at all">Not at all</option>
+                        <option value="Several days">Several days</option>
+                        <option value="More than half the days">More than half the days</option>
+                        <option value="Nearly every day">Nearly every day</option>
+                    </select>
+                </div>
+
+                <!-- Sleep Issues -->
+                <div class="form-group">
+                    <label for="sleep">3. Have you experienced trouble falling asleep, staying asleep, or sleeping too much?</label>
+                    <select id="sleep" name="sleep" required>
+                        <option value="">Select an option</option>
+                        <option value="Not at all">Not at all</option>
+                        <option value="Several days">Several days</option>
+                        <option value="More than half the days">More than half the days</option>
+                        <option value="Nearly every day">Nearly every day</option>
+                    </select>
+                </div>
+
+                <!-- Substance Use -->
+                <div class="form-group">
+                    <label for="substance-use">4. Have you used alcohol or other substances in a way that has caused concern for yourself or others?</label>
+                    <select id="substance-use" name="substance-use" required>
+                        <option value="">Select an option</option>
+                        <option value="Not at all">Not at all</option>
+                        <option value="Occasionally">Occasionally</option>
+                        <option value="Often">Often</option>
+                        <option value="Daily">Daily</option>
+                    </select>
+                </div>
+
+                <!-- Self-Harm -->
+                <div class="form-group">
+                    <label for="self-harm">5. Have you had thoughts of harming yourself or others?</label>
+                    <select id="self-harm" name="self-harm" required>
+                        <option value="">Select an option</option>
+                        <option value="Never">Never</option>
+                        <option value="Rarely">Rarely</option>
+                        <option value="Sometimes">Sometimes</option>
+                        <option value="Frequently">Frequently</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Additional Notes -->
+            <section class="notes">
+                <h2>Additional Notes</h2>
+                <div class="form-group">
+                    <label for="additional-notes">Is there anything else you would like to share about your mental health?</label>
+                    <textarea id="additional-notes" name="additional-notes" rows="5" placeholder="Write additional information here..."></textarea>
+                </div>
+            </section>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+

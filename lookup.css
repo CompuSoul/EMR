@@ -1,0 +1,186 @@
+/* styles.css */
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    background-image:background.png;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <normal;>;
+  font-style: normal;
+}
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: montserrat;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    margin-bottom: 10px;
+}
+
+header .logo-img {
+    max-width: 120px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.client-search {
+    margin-bottom: 20px;
+}
+
+.client-search h2 {
+    font-size: 1.5em;
+    color: #007bff;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: orangered;
+}
+
+#tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    background: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.tab-button.active {
+    background: #007bff;
+    color: #fff;
+    font-weight: normal;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Menu Bar Styling */
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-logo h1 {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+    font-weight: normal;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: normal;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-ribbon button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #007bff;
+    background-color: white;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.menu-ribbon button:hover {
+    background-color: orangered;
+}
+
+/* Content Area */
+.content {
+    padding: 20px;
+}
+p{
+    color: orangered;
+}

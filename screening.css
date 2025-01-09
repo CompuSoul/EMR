@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <normal;>;
+  font-style: normal;
+}
+* Menu Bar Styling */
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-logo h1 {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: normal;
+    font-family: "Montserrat";
+
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-ribbon button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: blue;
+    background-color: white;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-weight: normal;
+}
+
+.menu-ribbon button:hover {
+    background-color:royalblue;
+
+}
+
+/* Content Area */
+.content {
+    padding: 20px;
+}
+h1{
+    font-weight: normal;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+/* Menu Bar Styling */
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-logo h1 {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: normal;
+    font-family: "Montserrat";
+
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-ribbon button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color:Royalblue;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-weight: normal;
+}
+
+.menu-ribbon button:hover {
+    background-color:orangered;
+
+}
+
+/* Content Area */
+.content {
+    padding: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: #333;
+    font-weight: normal;
+}
+
+header p {
+    font-size: 1em;
+    color: #666;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: normal;
+}
+
+input, select, textarea {
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+textarea {
+    font-family: Arial, sans-serif;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+button:hover {
+    background-color: orangered;
+}

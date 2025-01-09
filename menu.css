@@ -1,0 +1,110 @@
+/* General Reset */
+
+body{
+    
+
+
+    background-image: url(medical.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* Menu Bar Styling */
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-logo h1 {
+    font-family:Montserrat;
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: light;
+    font-family: Montserrat;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 123, 255, 0.8);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.menu-logo h1 {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+.sign-in-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: royalblue;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.sign-in-button:hover {
+    background-color: orangered;
+}
+
+
+
+
+/* Content Area */
+.content {
+    padding: 20px;
+    font-family: Montserrat;
+    text-align: center;
+}
+h2{
+    font-family: Montserrat;
+    color: dimgrey;
+}
+h1{
+    font-weight: normal;
+}
+p{
+    color: orangered;
+    font-size: 20px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar with Calendar</title>
+    <link rel="stylesheet" href="newtestmenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu Bar -->
+    <div class="menu-bar">
+        <div class="menu-logo">
+            <h1>Zoom EMR</h1>
+        </div>
+        <nav class="menu-links">
+            <a href="Client Note.html">Notes</a>
+            <a href="Intake.html">Intake Form</a>
+            <a href="Assessment.html">Assessment</a>
+            <a href="Screening.html">Screening</a>
+            <a href="pcp1.html">PCP</a>
+            <a href="Lookup.html">Lookup</a>
+        </nav>
+        <div class="menu-ribbon">
+            <button class="sign-in-button" id="sign-in-btn">Sign In</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>Welcome to Zoom EMR</h2>
+        <p>Welcome to the future of Electronic Medical Records.</p>
+    </div>
+
+    <!-- Right Sidebar for Calendar -->
+    <div class="calendar-container hidden" id="calendar-container">
+    <h3>Appointments</h3>
+    <div id="calendar">
+        <p>No appointments available.</p>
+    </div>
+    <button id="quick-add-btn">Quick Add Client</button>
+</div>
+
+
+    <!-- Quick Add Popup -->
+    <div id="quick-add-popup" class="popup hidden">
+        <div class="popup-content">
+            <h3>Quick Add Client</h3>
+            <form id="quick-add-form">
+                <label for="client-name">Name</label>
+                <input type="text" id="client-name" required>
+
+                <label for="insurance">Insurance</label>
+                <input type="text" id="insurance" required>
+
+                <label for="provider">Provider</label>
+                <input type="text" id="provider" required>
+
+                <button type="submit">Save</button>
+                <button type="button" id="close-popup">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+<script type="text/javascript">const signInBtn = document.getElementById('sign-in-btn');
+const calendarContainer = document.getElementById('calendar-container');
+
+signInBtn.addEventListener('click', () => {
+    // Toggle calendar visibility
+    calendarContainer.classList.toggle('hidden');
+    signInBtn.textContent = signInBtn.textContent === "Sign In" ? "Logged In" : "Sign In";
+});
+</script>

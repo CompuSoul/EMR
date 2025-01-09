@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Assessment Form</title>
+    <link rel="stylesheet" href="assesment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body><!-- Menu Bar -->
+    <div class="menu-bar">
+        <div class="menu-logo">
+            <h1>Zoom EMR</h1>
+        </div>
+        <nav class="menu-links">
+            <a href="Menu.html">Home</a>
+            <a href="Intake.html">Intake Form</a>
+            <a href="Client Note.html">Notes</a>
+            <a href="Screening.html">Screening</a>
+            <a href="pcp1.html">PCP</a>
+            <a href="Lookup.html">Lookup</a>
+        </nav>
+        <div class="menu-ribbon">
+            
+            <button onclick="saveData()">Save</button>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Therapist Assessment Form</h1>
+            <p>Please complete this form to assess the client's overall health and therapy needs.</p>
+        </header>
+        <section>
+            <form>
+                <!-- Client Information -->
+                <h2>Client Information</h2>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="nonbinary">Non-binary</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Information:</label>
+                    <input type="text" id="contact" name="contact" placeholder="Phone or email" required>
+                </div>
+
+                <!-- Reason for Visit -->
+                <h2>Reason for Visit</h2>
+                <div class="form-group">
+                    <label for="reason">Primary Reason for Seeking Therapy:</label>
+                    <textarea id="reason" name="reason" placeholder="Describe reason for seeking therapy" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="goals">Therapy Goals:</label>
+                    <textarea id="goals" name="goals" placeholder="What does the client want to achieve?" rows="4" required></textarea>
+                </div>
+
+                <!-- Psychological and Emotional Health -->
+                <h2>Psychological and Emotional Health</h2>
+                <div class="form-group">
+                    <label for="symptoms">Current Symptoms:</label>
+                    <textarea id="symptoms" name="symptoms" placeholder="List symptoms (e.g., anxiety, depression, etc.)" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="history">Mental Health History:</label>
+                    <textarea id="history" name="history" placeholder="Describe any past mental health diagnoses or treatments" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="trauma">Trauma History (if applicable):</label>
+                    <textarea id="trauma" name="trauma" placeholder="Describe any significant trauma" rows="4"></textarea>
+                </div>
+
+                <!-- Physical Health -->
+                <h2>Physical Health</h2>
+                <div class="form-group">
+                    <label for="medications">Current Medications:</label>
+                    <textarea id="medications" name="medications" placeholder="List medications and dosages" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="conditions">Medical Conditions:</label>
+                    <textarea id="conditions" name="conditions" placeholder="List medical conditions (if any)" rows="4"></textarea>
+                </div>
+
+                <!-- Support System -->
+                <h2>Support System</h2>
+                <div class="form-group">
+                    <label for="support">Current Support System:</label>
+                    <textarea id="support" name="support" placeholder="Describe support system (e.g., family, friends, etc.)" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="stressors">Current Stressors:</label>
+                    <textarea id="stressors" name="stressors" placeholder="Describe any major stressors in life" rows="4"></textarea>
+                </div>
+
+                <!-- Therapist Notes -->
+                <h2>Therapist Notes</h2>
+                <div class="form-group">
+                    <label for="observations">Initial Observations:</label>
+                    <textarea id="observations" name="observations" placeholder="Therapist's initial observations" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="plan">Preliminary Treatment Plan:</label>
+                    <textarea id="plan" name="plan" placeholder="Outline a preliminary treatment plan" rows="4"></textarea>
+                </div>
+
+                <!-- Submission -->
+                <div class="form-group">
+                    <button type="submit">Save Assessment</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

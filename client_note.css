@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <normal;>;
+  font-style: normal;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: montserrat;
+}
+
+.menu-logo h1 {
+    font-family:Montserrat;
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: normal;
+    font-family: Montserrat;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 123, 255, 0.8);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.menu-logo h1 {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+    font-family:montserrat;
+    font-weight: normal;
+}
+
+.sign-in-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: royalblue;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: normal;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.sign-in-button:hover {
+    background-color: orangered;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: darkgrey;
+    font-family:"Montserrat";
+    font-weight:normal;
+}
+
+header p {
+    font-size: 1em;
+    color:orangered;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+textarea {
+    font-family: Montserrat;
+}
+button {
+    width:100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color:royalblue ;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: Normal;
+    margin-top: 20px;
+
+}
+
+button:hover {
+    background-color:orangered;
+}
+
+.goal {
+    margin-bottom: 20px;
+}
+
+.goal h3 {
+    color: #333;
+    margin-bottom: 5px;
+    font-family: Montserrat;
+    font-weight: normal;
+}

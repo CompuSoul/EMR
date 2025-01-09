@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Lookup</title>
+    <link rel="stylesheet" href="lookup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body><!-- Menu Bar -->
+    <div class="menu-bar">
+        <div class="menu-logo">
+            <h1>Zoom EMR</h1>
+        </div>
+        <nav class="menu-links">
+            <a href="Menu.html">Home</a>
+            <a href="Intake.html">Intake Form</a>
+            <a href="Assessment.html">Assessment</a>
+            <a href="Screening.html">Screening</a>
+            <a href="pcp1.html">PCP</a>
+            <a href="Client Note.html">Notes</a>
+        </nav>
+        <div class="menu-ribbon">
+            
+            <button onclick="saveData()">Save</button>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="medical.jpg" alt="Company Logo" class="logo-img">
+            </div>
+            <h1>Client Lookup</h1>
+        </header>
+        <main>
+            <!-- Client Search -->
+            <section class="client-search">
+                <h2>Search for a Client</h2>
+                <form id="search-form">
+                    <div class="form-group">
+                        <label for="client-id">Client ID:</label>
+                        <input type="text" id="client-id" name="client-id" placeholder="Enter Client ID" required>
+                    </div>
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+
+            <!-- Client Report -->
+            <section class="client-report">
+                <h2>Client Report</h2>
+                <div id="tabs">
+                    <button class="tab-button active" data-tab="intake">Intake Form</button>
+                    <button class="tab-button" data-tab="assessment">Assessment</button>
+                    <button class="tab-button" data-tab="pcp">Person-Centered Plan (PCP)</button>
+                </div>
+                <div id="tab-content">
+                    <!-- Intake Form -->
+                    <div class="tab-panel active" id="intake">
+                        <h3>Intake Form</h3>
+                        <p>No data available. Please search for a client.</p>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="tab-panel" id="assessment">
+                        <h3>Assessment</h3>
+                        <p>No data available. Please search for a client.</p>
+                    </div>
+                    <!-- PCP -->
+                    <div class="tab-panel" id="pcp">
+                        <h3>Person-Centered Plan (PCP)</h3>
+                        <p>No data available. Please search for a client.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

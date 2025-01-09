@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Intake Form</title>
+    <link rel="stylesheet" href="intake.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body><!-- Menu Bar -->
+    <div class="menu-bar">
+        <div class="menu-logo">
+            <h1>Zoom EMR</h1>
+        </div>
+        <nav class="menu-links">
+            <a href="Menu.html">Home</a>
+            <a href="Client Note.html">Notes</a>
+            <a href="Assessment.html">Assessment</a>
+            <a href="Screening.html">Screening</a>
+            <a href="pcp1.html">PCP</a>
+            <a href="Lookup.html">Lookup</a>
+        </nav>
+        <div class="menu-ribbon">
+            
+            <button onclick="saveData()">Save</button>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="" alt="" class="logo-img">
+            </div>
+            <h1>Client Intake Form</h1>
+            <p>Please fill out this form completely. Your information will remain confidential.</p>
+        </header>
+        <section>
+            <form>
+                <!-- Personal Information -->
+                <h2>Personal Information</h2>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="nonbinary">Non-binary</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Emergency Contact -->
+                <h2>Emergency Contact</h2>
+                <div class="form-group">
+                    <label for="emergency-name">Emergency Contact Name:</label>
+                    <input type="text" id="emergency-name" name="emergency-name" placeholder="Enter emergency contact name" required>
+                </div>
+                <div class="form-group">
+                    <label for="emergency-phone">Emergency Contact Phone:</label>
+                    <input type="tel" id="emergency-phone" name="emergency-phone" placeholder="Enter emergency contact phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="relationship">Relationship to Emergency Contact:</label>
+                    <input type="text" id="relationship" name="relationship" placeholder="e.g., Parent, Spouse" required>
+                </div>
+
+                <!-- Health and Medical History -->
+                <h2>Health and Medical History</h2>
+                <div class="form-group">
+                    <label for="medical-history">Do you have any current medical conditions?</label>
+                    <textarea id="medical-history" name="medical-history" placeholder="Describe your medical history" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="medications">Are you currently taking any medications?</label>
+                    <textarea id="medications" name="medications" placeholder="List medications and dosages" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="allergies">Do you have any allergies?</label>
+                    <textarea id="allergies" name="allergies" placeholder="List any known allergies" rows="3"></textarea>
+                </div>
+
+                <!-- Reason for Visit -->
+                <h2>Reason for Visit</h2>
+                <div class="form-group">
+                    <label for="reason">Reason for Seeking Services:</label>
+                    <textarea id="reason" name="reason" placeholder="Describe your primary concerns or goals" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="goals">What do you hope to achieve?</label>
+                    <textarea id="goals" name="goals" placeholder="Describe your goals for treatment" rows="4" required></textarea>
+                </div>
+
+                <!-- Consent and Agreements -->
+                <h2>Consent and Agreements</h2>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="privacy-policy" required>
+                        I acknowledge that I have read and understood the Privacy Policy.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="consent" required>
+                        I consent to the collection and use of my information for the purposes outlined.
+                    </label>
+                </div>
+
+                <!-- Submission -->
+                <div class="form-group">
+                    <button type="submit">Submit Form</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

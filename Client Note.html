@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Note Form</title>
+    <link rel="stylesheet" href="client_note.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body><!-- Menu Bar -->
+    <div class="menu-bar">
+        <div class="menu-logo">
+            <h1>Zoom EMR</h1>
+        </div>
+        <nav class="menu-links">
+            <a href="Menu.html">Home</a>
+            <a href="Intake.html">Intake Form</a>
+            <a href="Assessment.html">Assessment</a>
+            <a href="Screening.html">Screening</a>
+            <a href="pcp1.html">PCP</a>
+
+            
+        </nav>
+        <div class="menu-ribbon">
+            
+            <button onclick="saveData()">Save</button>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Client Note Form</h1>
+            <p>Document session details, progress on goals, and additional observations.</p>
+        </header>
+
+        <!-- Client Information Section -->
+        <section class="client-info">
+            <h2>Client Information</h2>
+            <form action="#" method="post" id="client-note-form">
+                <div class="form-group">
+                    <label for="client-name">Client Name:</label>
+                    <input type="text" id="client-name" name="client-name" placeholder="Enter client name" required>
+                </div>
+                <div class="form-group">
+                    <label for="session-date">Session Date:</label>
+                    <input type="date" id="session-date" name="session-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="therapist-name">Therapist/Staff Name:</label>
+                    <input type="text" id="therapist-name" name="therapist-name" placeholder="Enter therapist or staff name" required>
+                </div>
+            </form>
+        </section>
+
+        <!-- Goals and Progress Section -->
+        <section class="goal-progress">
+            <h2>Goals and Progress</h2>
+            <div id="goals-container">
+                <!-- Sample Goals -->
+                <div class="goal">
+                    <h3>Goal 1: Improve Communication Skills</h3>
+                    <p>Description: Engage in activities to enhance verbal and non-verbal communication.</p>
+                    <label for="progress-goal-1">Progress Notes for Goal:</label>
+                    <textarea id="progress-goal-1" name="progress-goal-1" rows="3" placeholder="Detail progress made toward this goal during the session..."></textarea>
+                </div>
+
+                <div class="goal">
+                    <h3>Goal 2: Increase Daily Living Skills</h3>
+                    <p>Description: Participate in tasks that promote independence in daily activities.</p>
+                    <label for="progress-goal-2">Progress Notes for Goal:</label>
+                    <textarea id="progress-goal-2" name="progress-goal-2" rows="3" placeholder="Detail progress made toward this goal during the session..."></textarea>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Notes Section -->
+        <section class="session-notes">
+            <h2>Therapist/Staff Notes</h2>
+            <div class="form-group">
+                <label for="session-notes">Detailed Progress Notes:</label>
+                <textarea id="session-notes" name="session-notes" rows="5" placeholder="Write detailed notes about the session, observations, client progress, and next steps..." required></textarea>
+            </div>
+        </section>
+
+        <button type="submit" class="submit-btn" form="client-note-form">Submit</button>
+    </div>
+</body>
+</html>

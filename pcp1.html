@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Carolina Person-Centered Plan</title>
+    <link rel="stylesheet" href="pcp1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body><!-- Menu Bar -->
+    <div class="menu-bar">
+        <div class="menu-logo">
+            <h1>Zoom EMR</h1>
+        </div>
+        <nav class="menu-links">
+            <a href="Menu.html">Home</a>
+            <a href="Intake.html">Intake Form</a>
+            <a href="Assessment.html">Assessment</a>
+            <a href="Screening.html">Screening</a>
+           <a href="Client Note.html">Notes</a>
+            <a href="Lookup.html">Lookup</a>
+        </nav>
+        <div class="menu-ribbon">
+            
+            <button onclick="saveData()">Save</button>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="seal.png" alt="State of North Carolina Logo">
+            </div>
+            <h1>North Carolina Person-Centered Plan</h1>
+            <p>A plan that reflects the individual’s goals, strengths, and support needs.</p>
+        </header>
+        <section>
+            <form>
+                <!-- Personal Information -->
+                <h2>Personal Information</h2>
+                <div class="form-group">
+                    <label for="name">Name of Individual:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" placeholder="Enter address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Primary Contact:</label>
+                    <input type="text" id="contact" name="contact" placeholder="Phone or email" required>
+                </div>
+
+                <!-- Vision and Goals -->
+                <h2>Vision and Goals</h2>
+                <div class="form-group">
+                    <label for="vision">Vision for the Future:</label>
+                    <textarea id="vision" name="vision" placeholder="Describe vision for the future" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="goals">Goals and Objectives:</label>
+                    <textarea id="goals" name="goals" placeholder="Describe personal goals and objectives" rows="5" required></textarea>
+                </div>
+
+                <!-- Strengths and Preferences -->
+                <h2>Strengths and Preferences</h2>
+                <div class="form-group">
+                    <label for="strengths">Individual Strengths:</label>
+                    <textarea id="strengths" name="strengths" placeholder="List strengths" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="preferences">Preferences and Interests:</label>
+                    <textarea id="preferences" name="preferences" placeholder="List preferences and interests" rows="4" required></textarea>
+                </div>
+
+                <!-- Supports and Services -->
+                <h2>Supports and Services</h2>
+                <div class="form-group">
+                    <label for="support">Supports Needed:</label>
+                    <textarea id="support" name="support" placeholder="Describe supports needed" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="services">Services Received:</label>
+                    <textarea id="services" name="services" placeholder="List current services" rows="5" required></textarea>
+                </div>
+
+                <!-- Emergency Plan -->
+                <h2>Emergency Plan</h2>
+                <div class="form-group">
+                    <label for="emergency-contact">Emergency Contact:</label>
+                    <input type="text" id="emergency-contact" name="emergency-contact" placeholder="Enter emergency contact details" required>
+                </div>
+                <div class="form-group">
+                    <label for="plan">Emergency Plan Details:</label>
+                    <textarea id="plan" name="plan" placeholder="Describe emergency plan" rows="5" required></textarea>
+                </div>
+
+                <!-- Team Members -->
+                <h2>Support Team</h2>
+                <div class="form-group">
+                    <label for="team">Support Team Members:</label>
+                    <textarea id="team" name="team" placeholder="List team members and roles" rows="5" required></textarea>
+                </div>
+
+                <!-- Submission -->
+                <div class="form-group">
+                    <button type="submit">Submit Plan</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

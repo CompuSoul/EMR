@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Note Form</title>
+    <link rel="stylesheet" href="progress_note.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Client Progress Note Form</h1>
+            <p>Track progress and record notes for goals from the Person-Centered Plan (PCP).</p>
+        </header>
+
+        <section class="client-info">
+            <h2>Client Information</h2>
+            <form action="#" method="post" id="client-note-form">
+                <div class="form-group">
+                    <label for="client-name">Client Name:</label>
+                    <input type="text" id="client-name" name="client-name" placeholder="Enter client name" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="therapist">Therapist/Staff Name:</label>
+                    <input type="text" id="therapist" name="therapist" placeholder="Enter therapist or staff name" required>
+                </div>
+            </form>
+        </section>
+
+        <section class="goal-progress">
+            <h2>Goals and Progress</h2>
+            <div id="goals-container">
+                <!-- Example Goal 1 -->
+                <div class="goal">
+                    <h3>Goal 1: Improve Communication Skills</h3>
+                    <p>Description: Engage in activities to enhance verbal and non-verbal communication.</p>
+                    <label for="progress-goal-1">Progress:</label>
+                    <textarea id="progress-goal-1" name="progress-goal-1" rows="3" placeholder="Describe progress towards this goal..."></textarea>
+                </div>
+                <!-- Example Goal 2 -->
+                <div class="goal">
+                    <h3>Goal 2: Increase Daily Living Skills</h3>
+                    <p>Description: Participate in tasks that promote independence in daily activities.</p>
+                    <label for="progress-goal-2">Progress:</label>
+                    <textarea id="progress-goal-2" name="progress-goal-2" rows="3" placeholder="Describe progress towards this goal..."></textarea>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress-notes">
+            <h2>Progress Notes</h2>
+            <div class="form-group">
+                <label for="progress-notes">Notes:</label>
+                <textarea id="progress-notes" name="progress-notes" rows="5" placeholder="Write detailed progress notes here..." required></textarea>
+            </div>
+        </section>
+
+        <section class="session-summary">
+            <h2>Session Summary</h2>
+            <div class="form-group">
+                <label for="session-summary">Summary:</label>
+                <textarea id="session-summary" name="session-summary" rows="5" placeholder="Summarize the session, including interventions used..." required></textarea>
+            </div>
+        </section>
+
+        <button type="submit" class="submit-btn" form="client-note-form">Submit</button>
+    </div>
+</body>
+</html>
